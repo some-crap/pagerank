@@ -22,6 +22,7 @@ yum install https://centos7.iuscommunity.org/ius-release.rpm
 
 yum install python36u python36u-devel python36u-pip
 
+pip3 install numpy
 
 Далее привязываем доменное имя к аккаунту и ip-адресу и загружаем все файлы в корень сайта.
 
