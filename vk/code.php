@@ -3,6 +3,7 @@
 // В запросах нужно указать свой group_id и access_token
 // Token можно получить на http://vkhost.github.io
 // В файле config.php необходимо указать данные для подключения к базе данных MySQL
+// После выполнения кода можно скачать дамп таблицы matrix в формате CSV и ввести путь к нему в фалйле count.py
 $fd = fopen("group_followers.txt", 'w') or die("не удалось создать файл");
 $str = file_get_contents('https://api.vk.com/method/groups.getMembers?group_id=180732056&sort=id_asc&count=300&access_token=СЕКРЕТНЫЙ ТОКЕН&v=5.92');
 fwrite($fd, $str);
